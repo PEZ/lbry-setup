@@ -38,17 +38,8 @@ The installation of the actual dependencies is covered in the instructions below
 
 ### Install dependencies using Homebrew
 
-        brew install autoconf 
-        brew install automake 
-        brew install libtool 
-        brew install boost
-        brew install openssl 
-        brew link --force openssl
-        brew install pkg-config 
-        brew install protobuf 
-        brew install qt5 
-        brew install git 
-        brew install gmp
+    brew install autoconf automake libtool boost openssl pkg-config protobuf qt5 git gmp
+    brew link --force openssl
 
 ### Installing berkeley-db4 using Homebrew
 
@@ -58,7 +49,7 @@ Running this command takes you into brew's interactive mode, which allows you to
 
     brew install https://raw.github.com/homebrew/homebrew/master/Library/Formula/berkeley-db4.rb -–without-java 
 
-The rest of these commands are run inside brew interactive mode:
+This will make homebrew enter interactive mode and give you a new prompt where you should run these commands, in order:
 
     cd ..
     db-4.8.30/dist/configure --prefix=/usr/local/Cellar/berkeley-db4/4.8.30 --mandir=/usr/local/Cellar/berkeley-db4/4.8.30/share/man --enable-cxx
